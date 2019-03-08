@@ -277,3 +277,5 @@ arr = [1, 2, 3]
 result = arr.map() { |item| item = item*2 }
 #输出：[2, 4, 6]
 puts "#{result}"
+
+#29.数组的压缩 pack函数
