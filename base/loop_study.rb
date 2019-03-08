@@ -134,3 +134,22 @@ puts "for 语句:"
 for i in 0..3
   puts "局部变量的值为 #{i}"
 end
+=begin
+for...in 循环几乎是完全等价于：
+
+(expression).each do |variable[, variable...]| code end
+但是，for 循环不会为局部变量创建一个新的作用域。
+
+语法中 do 可以省略不写。但若要在一行内写出 for 式，则必须以 do 隔开条件式或程式区块。
+=end
+puts "for...in  语句:"
+=begin
+输出：
+局部变量的值为 0
+局部变量的值为 1
+局部变量的值为 2
+局部变量的值为 3
+=end
+(0..3).each do |i|
+  puts "局部变量的值为 #{i}"
+end
