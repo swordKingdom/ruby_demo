@@ -77,3 +77,7 @@ puts "#{arr}"
 
 #12. array.compact
 #返回 self 的副本，移除了所有的 nil 元素。
+# arr = Array.[](nil,1,3,54)
+# puts "#{arr}"
+# arr.compact
+# puts "#{arr}"
