@@ -74,3 +74,6 @@ puts "#{arr}"
 #11.	array.collect! { |item| block } [or]
 #array.map! { |item| block }
 #为 self 中的每个元素调用一次 block，把元素替换为 block 返回的值。
+
+#12. array.compact
+#返回 self 的副本，移除了所有的 nil 元素。
