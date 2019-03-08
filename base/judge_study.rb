@@ -105,3 +105,4 @@ case
   when quu then
     puts 'quu is true'
 end
+
