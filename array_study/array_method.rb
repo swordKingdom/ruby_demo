@@ -69,3 +69,8 @@ puts "#{arr}"
 #10. array.collect { |item| block } [or]
 #array.map { |item| block }
 #为 self 中的每个元素调用一次 block。创建一个新的数组，包含 block 返回的值。
+
+
+#11.	array.collect! { |item| block } [or]
+#array.map! { |item| block }
+#为 self 中的每个元素调用一次 block，把元素替换为 block 返回的值。
