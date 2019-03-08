@@ -259,3 +259,21 @@ arr = [1, 2, 3]
 result = arr.replace [1, 2, 3, 0, 1, 2] # replace 和替换的数组之间有一个间隔
 #输出：[1, 2, 3, 0, 1, 2]
 puts "#{result}"
+
+
+#28.数组的inject函数
+puts "数组的inject函数"
+arr = [1, 2, 3]
+result = arr.inject(0) { |sum, item| sum += item }
+#上面的示例：inject的参数0表示初始化sum，item表示遍历每一个元素，在block里不断自加，最后返回累计加值。
+#输出：6
+puts "#{result}"
+
+
+#28.数组的map函数
+#map的item也表示遍历数组元素，对元素进行计算后，返回一个结果数组。
+puts "数组的map函数"
+arr = [1, 2, 3]
+result = arr.map() { |item| item = item*2 }
+#输出：[2, 4, 6]
+puts "#{result}"
