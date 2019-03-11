@@ -1,18 +1,26 @@
 class ClassDefine
-  @@no_of_customers=0
+  @@cust_id
 
-  def initialize(id, name, addr)
-    @cust_id=id
-    @cust_name=name
-    @cust_addr=addr
+  def initialize(id)
+    @@cust_id = id
+  end
+
+  def ClassDefine.custId=(x)
+    @@cust_id = x
+  end
+
+  def ClassDefine.custId
+    @@cust_id
   end
 
   def hello
-    puts "Hello Ruby!"
+    puts "Hello Ruby! #{@@cust_id}"
   end
 end
 
 
 #创建对象
-first = ClassDefine.new("a", "b", "c")
+
+ClassDefine.custId = "a"
+puts "#{ClassDefine.custId}"
 puts "#{first.hello}"
